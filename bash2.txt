@@ -1,0 +1,179 @@
+1. 79114@SAnna MINGW64 ~/OneDrive/VScode project
+$ cd ~
+
+2.79114@SAnna MINGW64 ~
+$ mkdir test3
+
+3. 79114@SAnna MINGW64 ~
+$ cd test3
+
+79114@SAnna MINGW64 ~/test3
+$ touch file4.txt
+
+79114@SAnna MINGW64 ~/test3
+$ touch file5.txt
+
+79114@SAnna MINGW64 ~/test3
+$ touch file6.txt
+
+79114@SAnna MINGW64 ~/test3
+$ vi file4.txt
+
+79114@SAnna MINGW64 ~/test3
+$ cat file4.txt
+row1
+row2
+row3
+row4
+
+79114@SAnna MINGW64 ~/test3
+$ vi file5.txt
+
+79114@SAnna MINGW64 ~/test3
+$ cat file5.txt
+row1
+row2
+row3
+row4
+
+79114@SAnna MINGW64 ~
+$ vi file6.txt
+
+79114@SAnna MINGW64 ~
+$ cat file6.txt
+row1
+row2
+row3
+row4
+
+4. 79114@SAnna MINGW64 ~/test3
+$ grep "row2" file5.txt
+row2
+
+5. 79114@SAnna MINGW64 ~
+$ grep -r "row" test3
+test3/file4.txt:row1
+test3/file4.txt:row2
+test3/file4.txt:row3
+test3/file4.txt:row4
+test3/file5.txt:row1
+test3/file5.txt:row2
+test3/file5.txt:row3
+test3/file5.txt:row4
+test3/file6.txt:row1
+test3/file6.txt:row2
+test3/file6.txt:row3
+test3/file6.txt:row4
+
+6. 79114@SAnna MINGW64 ~
+$ grep -c "row" test3/file6.txt
+4
+
+7. 79114@SAnna MINGW64 ~
+$ find test3 -name "file5.txt"
+test3/file5.txt
+
+8. 79114@SAnna MINGW64 ~
+$ find test3 -name "file5.txt" -exec rm {} \;
+
+79114@SAnna MINGW64 ~
+$ ls test3
+file4.txt  file6.txt
+
+9. 79114@SAnna MINGW64 ~
+$ echo "test">> test3/file4.txt
+
+79114@SAnna MINGW64 ~/test3
+$ cat file4.txt
+row1
+row2
+row3
+row4
+test
+
+10. 79114@SAnna MINGW64 ~/test3
+$ sed -i 's/test/fail/g' file4.txt
+
+
+79114@SAnna MINGW64 ~/test3
+$ cat file4.txt
+row1
+row2
+row3
+row4
+fail
+
+11. 79114@SAnna MINGW64 ~/test3
+$ echo "test" >> file4.txt
+
+79114@SAnna MINGW64 ~/test3
+$ cat file4.txt
+row1
+row2
+row3
+row4
+fail
+test
+
+12. 79114@SAnna MINGW64 ~/test3
+$ ps
+      PID    PPID    PGID     WINPID   TTY         UID    STIME COMMAND
+     2342    1875    2342      14248  cons0     197609 17:53:20 /usr/bin/ps
+     1875       1    1875       2680  cons0     197609 16:32:24 /usr/bin/bash
+
+13. 79114@SAnna MINGW64 ~/test3
+$ kill 666
+
+14. 79114@SAnna MINGW64 ~
+$ ping rusau.net
+
+Обмен пакетами с rusau.net [5.181.161.75] с 32 байтами данных:
+Ответ от 5.181.161.75: число байт=32 время=66мс TTL=51
+Ответ от 5.181.161.75: число байт=32 время=19мс TTL=53
+Ответ от 5.181.161.75: число байт=32 время=34мс TTL=53
+Ответ от 5.181.161.75: число байт=32 время=80мс TTL=51
+
+Статистика Ping для 5.181.161.75:
+    Пакетов: отправлено = 4, получено = 4, потеряно = 0
+    (0% потерь)
+Приблизительное время приема-передачи в мс:
+    Минимальное = 19мсек, Максимальное = 80 мсек, Среднее = 49 мсек 
+
+15. 79114@SAnna MINGW64 ~
+$ ping -c 5 rusau.net
+Доступ запрещен. Для параметра -c требуются права администратора
+
+16. 79114@SAnna MINGW64 ~
+$ curl https://petstore.swagger.io/data
+<html>
+<head><title>404 Not Found</title></head>
+<body>
+<center><h1>404 Not Found</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+
+17.79114@SAnna MINGW64 ~/OneDrive/VScode project
+$ curl -X POST "https://petstore.swagger.io/v2/user" \
+-Hcurl -X POST "https://petstore.swagger.io/v2/user" \
+-H "accept: application/json" \son" \
+-H "Content-Type: application/json" \
+-d '{": 11,
+  "id": 11,": "newuser",
+  "username": "newuser",
+  "firstName": "Anna",
+  "lastName": "Sush",mail.ru"
+  "email": "AnnaSush@mail.ru",
+  "password": "susa1234",,
+  "phone": "123-456-7890",
+  "userStatus": 1
+}'
+{"code":200,"type":"unknown","message":"11"}
+
+
+ 
+
+
+ 
+
+
