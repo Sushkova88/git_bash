@@ -1,0 +1,102 @@
+1. 79114@SAnna MINGW64 ~/OneDrive/VScode project
+$ cd ~
+
+2. 79114@SAnna MINGW64 ~
+$ pwd
+/c/Users/79114
+
+3. 79114@SAnna MINGW64 ~
+$ mkdir test1
+
+4.79114@SAnna MINGW64 ~
+$ cd test1
+
+5. 79114@SAnna MINGW64 ~/test1
+$ touch file1
+
+79114@SAnna MINGW64 ~/test1
+$ touch file2
+
+79114@SAnna MINGW64 ~/test1
+$ touch file3
+
+6. 79114@SAnna MINGW64 ~/test1
+$ ls
+file1.txt  file2.txt  file3.txt
+
+7. 79114@SAnna MINGW64 ~/test1
+$ cd
+
+8. 79114@SAnna MINGW64 ~
+$ mkdir test2
+
+9. 79114@SAnna MINGW64 ~
+$ rmdir test2
+
+10. 79114@SAnna MINGW64 ~/test1
+$ rm file2
+
+11. 79114@SAnna MINGW64 ~/test1
+$ cd
+
+79114@SAnna MINGW64 ~
+$ mkdir test3
+
+79114@SAnna MINGW64 ~
+$ cd test3
+
+79114@SAnna MINGW64 ~/test3
+$ touch file3.txt
+
+79114@SAnna MINGW64 ~/test3
+$ touch file4.txt
+
+12. 79114@SAnna MINGW64 ~
+$ rm -r test3
+
+13. 79114@SAnna MINGW64 ~
+$ mkdir test4
+
+14. 79114@SAnna MINGW64 ~
+$ mv test1/file1.txt test4
+
+79114@SAnna MINGW64 ~
+$ mv test1/file3.txt test4
+
+15. 79114@SAnna MINGW64 ~
+$ vi file1.txt
+line
+line
+line
+
+16. 79114@SAnna MINGW64 ~
+$ grep "line" file1.txt
+line
+line
+line
+17. 79114@SAnna MINGW64 ~
+$ vi file3.txt
+
+18. 79114@SAnna MINGW64 ~
+$ grep "line" file1.txt file3.txt
+file1:line
+file1:line
+file1:line
+file3:line
+file3:line
+file3:line
+
+19. 79114@SAnna MINGW64 ~
+$ vi file1.txt
+:%s/.*/new text/g
+
+79114@SAnna MINGW64 ~
+$ cat file1.txt
+replacement
+replacement
+replacement
+
+
+
+ 
+
