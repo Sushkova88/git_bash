@@ -1,4 +1,7 @@
 # "Работа с git и bash"
-bash1.txt - https://github.com/Sushkova88/git_bash/blob/main/bash1.txt
+<a href="https://qa.demoshopping.ru/"> Интернет-магазин </a>  – это веб-приложение, которое позволяет пользователю регистрироваться, авторизоваться, изучать каталог, добавлять товары в корзину, формировать заказы и оплачивать их.
+У приложения есть графический интерфейс и программные интерфейсы, база данных. Приложение должно работать во всех популярных браузерах и операционных системах, как на компьютере, так и на мобильных устройствах.
 
-bash2.txt - https://github.com/Sushkova88/git_bash/blob/main/bash2.txt
+<a href= "https://github.com/Sushkova88/git_bash/blob/main/bash1.txt"> bash1.txt </a> 
+
+<a href= "https://github.com/Sushkova88/git_bash/blob/main/bash2.txt"> bash2.txt </a> 
